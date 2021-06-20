@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background: #c9bda3;}
+        .menu{
+            background-color: #ede2cb;
+            height: 440px;
+            width: 700px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding: 5px;
+        }
+        .caption{
+            padding: 5px;
+            background-color: #d8c7a4;
+            margin: -5px;
+        }
+        .save{
+            padding:5px;
+            margin: 20px;
+            background-color: #ddb09d;
+            border-radius: 20px;
+        }
+        .save:hover{
+            padding: 5px;
+            margin: 10px;
+            margin-top: 25px;
+            background-color: #d89a7f;
+        }
+        h3{
+            margin-left: -350px;
+        }
+        #blue{
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color: #0095dd;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #red{
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color: #dd0000;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #pink{
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color:#FFCBDB;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+    .colors{
+        margin-top: -30px;
+        margin-left: 250px;
+    }
+    .optcolor{
+        background-color:#e0d3b8;
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="caption">
+            <h1>skins</h1>
+        </div>
+        <div class="optionworm optcolor">
+            <h3>Цвет червяка</h3>
+            <div class="colors">
+        <div id="blue" onclick="localStorage.setItem('fillStyle','#0095DD');">Синий</div>
+        <div id="red" onclick="localStorage.setItem('fillStyle','#dd0000');">Красный</div>
+        <div id="pink" onclick="localStorage.setItem('fillStyle','#00dd88');">Розовый</div>
+            </div>
+            <br>            <br>
+        </div>
+        <div class="save" onclick="document.location='menu/worm.html'">
+                <h2>Сохранить</h2>
+        </div>
+    </div>
+</body>
+</html>
